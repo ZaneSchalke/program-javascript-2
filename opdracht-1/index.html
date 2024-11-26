@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 1 - For en While Lussen</title>
+</head>
+<body>
+    <h1>Gebruik van For en While Lussen</h1>
+    <p>In deze opdracht beschrijven we wanneer je als developer een <code>for</code> of <code>while</code> lus gebruikt in je code. Hieronder volgen twee situaties voor elke lus.</p>
+
+    <h2>For Loop</h2>
+    <p>Een <code>for</code> loop wordt vaak gebruikt wanneer je van tevoren weet hoeveel iteraties er moeten worden uitgevoerd, of wanneer je een specifiek bereik van elementen wilt herhalen.</p>
+
+    <h3>Situatie 1: Itereren over een lijst van producten</h3>
+    <p>Stel, je hebt een lijst van producten in je webshop en je wilt door elk product in deze lijst itereren om ze weer te geven op je website. Je weet precies hoeveel producten er zijn en je wilt elke iteratie van de lijst doorlopen.</p>
+    <pre><code>
+    const producten = ["Product 1", "Product 2", "Product 3"];
+    
+    for (let i = 0; i &lt; producten.length; i++) {
+        console.log(producten[i]);
+    }
+    </code></pre>
+    <p>In dit voorbeeld gebruiken we een <code>for</code> loop omdat we weten dat de lijst van producten een vast aantal items heeft.</p>
+
+    <h3>Situatie 2: Itereren over de getallen van 1 tot 10</h3>
+    <p>Stel, je wilt de getallen van 1 tot 10 afdrukken. Omdat je precies weet hoeveel getallen er zijn (namelijk 10), kun je een <code>for</code> loop gebruiken om de herhalingen van 1 tot 10 te regelen.</p>
+    <pre><code>
+    for (let i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+    </code></pre>
+    <p>In dit voorbeeld gebruiken we een <code>for</code> loop omdat we het aantal herhalingen kennen.</p>
+
+    <h2>While Loop</h2>
+    <p>Een <code>while</code> loop wordt vaak gebruikt wanneer je niet precies weet hoeveel herhalingen er nodig zijn, maar wanneer een bepaalde voorwaarde nog steeds waar is. De loop blijft draaien zolang de voorwaarde waar is.</p>
+
+    <h3>Situatie 1: Wacht totdat een gebruiker inlogt</h3>
+    <p>Stel, je hebt een systeem waarbij de gebruiker moet inloggen. Je weet niet hoeveel tijd het duurt totdat de gebruiker zich aanmeldt, maar je wilt de code blijven controleren totdat de gebruiker inlogt. Dit is een typisch scenario voor een <code>while</code> loop.</p>
+    <pre><code>
+    let ingelogd = false;
+    
+    while (!ingelogd) {
+        // Controleer of de gebruiker is ingelogd
+        ingelogd = checkInlogStatus();  // Stel dat deze functie true of false retourneert
+    }
+    console.log("Gebruiker is ingelogd!");
+    </code></pre>
+    <p>De loop blijft draaien totdat de gebruiker ingelogd is, wat een onbekende hoeveelheid tijd kan duren.</p>
+
+    <h3>Situatie 2: Artikelen ophalen uit een database totdat er geen artikelen meer zijn</h3>
+    <p>Stel, je haalt artikelen op uit een database en wilt blijven ophalen totdat er geen artikelen meer beschikbaar zijn. De exacte hoeveelheid artikelen is onbekend, maar je wilt doorgaan met ophalen totdat de database leeg is. Een <code>while</code> loop is hier geschikt.</p>
+    <pre><code>
+    let artikelen = haalArtikelenOp();
+    
+    while (artikelen.length > 0) {
+        console.log(artikelen);
+        artikelen = haalArtikelenOp();  // Haal nieuwe artikelen op
+    }
+    </code></pre>
+    <p>De <code>while</code> loop blijft doorgaan zolang er artikelen beschikbaar zijn om op te halen.</p>
+
+    <footer>
+        <p>Opdracht uitgevoerd door [Jouw Naam].</p>
+    </footer>
+</body>
+</html>
