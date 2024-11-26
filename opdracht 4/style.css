@@ -1,0 +1,16 @@
+#div1 { background-color: blue; color: white; }
+#div2 { background-color: green; color: white; }
+#div3 { background-color: red; color: white; }
+#div4 { background-color: orange; color: black; }
+#div5 { background-color: pink; color: black; }
+#div6 { background-color: purple; color: white; }
+#div7 { background-color: violet; color: white; }
+#div8 { background-color: black; color: white; }
+#div9 { background-color: teal; color: white; }
+#div10 { background-color: cyan; color: black; }
+
+.box {
+    padding: 10px;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+}
